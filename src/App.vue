@@ -1,29 +1,27 @@
 <template>
-  <div className="app">
-    <header className="app-header">
-      <img :src="logo" className="app-logo" alt="logo" />
-      <p>
-        Edit <code>src/app.js</code> and save to reload.
-      </p>
-      <a
-        className="app-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn Vue
-      </a>
-    </header>
-  </div>
+<div>
+  <Navbar />
+  
+      <!-- Bootstrap container wrapper div -->
+      <div class="container">
+        <!-- Bootstrap row wrapper div -->
+        <div class="row">
+          <!-- Countries List (Bootstrap column) -->
+          <CountriesList />
+
+          <!-- Country Details (Bootstrap column) -->
+          <CountryDetails />
+          
+        </div>
+      </div>
+    </div>
+  
 </template>
 
-<script>
-  import logo from './logo.svg';
-  export default {
-    data: () => ({
-      logo
-    })
-  }
+<script setup>
+  import Navbar from './components/Navbar.vue'
+  import CountriesList from './components/CountriesList.vue'
+
 </script>
 
 <style>
