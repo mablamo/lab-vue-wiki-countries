@@ -1,17 +1,10 @@
 <template>
 <div>
   <Navbar />
-  
-      <!-- Bootstrap container wrapper div -->
       <div class="container">
-        <!-- Bootstrap row wrapper div -->
         <div class="row">
-          <!-- Countries List (Bootstrap column) -->
           <CountriesList />
-
-          <!-- Country Details (Bootstrap column) -->
-          <CountryDetails />
-          
+          <router-view />
         </div>
       </div>
     </div>
